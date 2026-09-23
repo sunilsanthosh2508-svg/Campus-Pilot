@@ -1,125 +1,486 @@
-<!doctype html>
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Campus Pilot — Your college project, from idea to viva.</title>
-  <meta name="description" content="Campus Pilot is a student-focused workspace being built to simplify the college project journey.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Campus Pilot — Your College Project, From Idea to Viva</title>
+
+  <meta
+    name="description"
+    content="Campus Pilot is a student-focused workspace being built to simplify the college project journey."
+  >
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+  <!-- NAVIGATION -->
   <header class="nav">
-    <a class="brand" href="#">
+
+    <a href="#" class="brand">
       <span class="brand-mark">CP</span>
       <span>Campus Pilot</span>
     </a>
+
     <nav>
       <a href="#vision">Vision</a>
-      <a href="#features">What we're building</a>
+      <a href="#features">What We're Building</a>
       <a href="#founders">Founders</a>
-      <a class="nav-cta" href="#early-access">Join early access</a>
+      <a href="#early-access" class="nav-cta">
+        Join Early Access
+      </a>
     </nav>
-    <button class="menu" aria-label="Open menu">☰</button>
+
+    <button class="menu" aria-label="Open navigation">
+      ☰
+    </button>
+
   </header>
 
+
   <main>
+
+    <!-- HERO -->
     <section class="hero">
+
       <div class="glow"></div>
+
       <div class="hero-copy">
-        <div class="eyebrow">BUILT BY STUDENTS · FOR STUDENTS</div>
-        <h1>Your college project,<br><span>from idea to viva.</span></h1>
+
+        <div class="eyebrow">
+          BUILT BY STUDENTS · FOR STUDENTS
+        </div>
+
+        <h1>
+          Your college project,
+          <br>
+          <span>from idea to viva.</span>
+        </h1>
+
         <p class="hero-text">
-          Campus Pilot is a student-focused workspace we're building to bring project ideas,
-          planning, documentation, presentations, GitHub, and viva preparation into one journey.
+          Campus Pilot is a student-focused workspace we're building to bring
+          project ideas, planning, documentation, presentations, GitHub,
+          and viva preparation into one journey.
         </p>
+
         <div class="actions">
-          <a class="button primary" href="#early-access">Join Early Access <span>→</span></a>
-          <a class="button secondary" href="#vision">Explore the vision</a>
+
+          <a
+            class="button primary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfoucuXzE4pFN5OpZvHPbZ-017u6ZsesE6mg6PRRd-cMvFv8w/viewform"
+            target="_blank"
+            rel="noopener"
+          >
+            Join Early Access →
+          </a>
+
+          <a class="button secondary" href="#vision">
+            Explore the Vision
+          </a>
+
         </div>
-        <p class="note">We're validating the idea with students right now.</p>
+
+        <p class="note">
+          We're validating the idea with students right now.
+        </p>
+
       </div>
 
+
+      <!-- PRODUCT PREVIEW -->
       <div class="hero-card">
-        <div class="window-top"><span></span><span></span><span></span></div>
-        <div class="pilot-label">CAMPUS PILOT</div>
-        <div class="project-title">Your Project Journey</div>
+
+        <div class="window-top">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="pilot-label">
+          CAMPUS PILOT
+        </div>
+
+        <div class="project-title">
+          Your Project Journey
+        </div>
+
         <div class="journey">
-          <div class="journey-item active"><b>01</b><span>Idea</span></div>
+
+          <div class="journey-item active">
+            <b>01</b>
+            <span>Idea</span>
+          </div>
+
           <div class="line"></div>
-          <div class="journey-item"><b>02</b><span>Plan</span></div>
+
+          <div class="journey-item">
+            <b>02</b>
+            <span>Plan</span>
+          </div>
+
           <div class="line"></div>
-          <div class="journey-item"><b>03</b><span>Build</span></div>
+
+          <div class="journey-item">
+            <b>03</b>
+            <span>Build</span>
+          </div>
+
           <div class="line"></div>
-          <div class="journey-item"><b>04</b><span>Present</span></div>
+
+          <div class="journey-item">
+            <b>04</b>
+            <span>Present</span>
+          </div>
+
         </div>
+
+
         <div class="mini-grid">
-          <div><strong>Project workspace</strong><span>One place for your work</span></div>
-          <div><strong>AI assistance</strong><span>Support when you need it</span></div>
+
+          <div>
+            <strong>Project Workspace</strong>
+            <span>One place for your work</span>
+          </div>
+
+          <div>
+            <strong>AI Assistance</strong>
+            <span>Support when you need it</span>
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- VISION / PROBLEM -->
     <section id="vision" class="section split">
+
       <div>
-        <div class="eyebrow">THE PROBLEM</div>
-        <h2>Too many tools.<br>One project.</h2>
-      </div>
-      <div class="section-copy">
-        <p>College projects often mean switching between documents, AI tools, design tools, GitHub, presentation software, and scattered notes.</p>
-        <p>Campus Pilot is exploring a simpler way to organize that journey—without forcing students to rebuild their workflow from scratch.</p>
-      </div>
-    </section>
 
-    <section id="features" class="section">
-      <div class="section-heading">
-        <div>
-          <div class="eyebrow">WHAT WE'RE BUILDING</div>
-          <h2>One journey.<br>Many project moments.</h2>
+        <div class="eyebrow">
+          THE PROBLEM
         </div>
-        <p>These are planned directions, shaped by student feedback.</p>
+
+        <h2>
+          Too many tools.
+          <br>
+          One project.
+        </h2>
+
       </div>
+
+
+      <div class="section-copy">
+
+        <p>
+          College projects often mean switching between documents,
+          AI tools, design tools, GitHub, presentation software,
+          and scattered notes.
+        </p>
+
+        <p>
+          Campus Pilot is exploring a simpler way to organize that journey
+          without forcing students to rebuild their workflow from scratch.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+
+      <div class="section-heading">
+
+        <div>
+
+          <div class="eyebrow">
+            WHAT WE'RE BUILDING
+          </div>
+
+          <h2>
+            One journey.
+            <br>
+            Many project moments.
+          </h2>
+
+        </div>
+
+        <p>
+          These are planned directions, shaped by student feedback.
+        </p>
+
+      </div>
+
+
       <div class="cards">
-        <article><div class="icon">✦</div><h3>Project ideas & planning</h3><p>Turn rough ideas into clearer problems, scope, milestones, and plans.</p></article>
-        <article><div class="icon">AI</div><h3>AI project assistant</h3><p>Get contextual help across the different stages of a project.</p></article>
-        <article><div class="icon">▤</div><h3>Documentation</h3><p>Organize project information and make report preparation easier.</p></article>
-        <article><div class="icon">◫</div><h3>Presentation support</h3><p>Prepare a clearer story for demos, reviews, and presentations.</p></article>
-        <article><div class="icon">?</div><h3>Viva preparation</h3><p>Practice explaining your project and prepare for likely questions.</p></article>
-        <article><div class="icon">⌘</div><h3>GitHub & portfolio</h3><p>Keep project outputs ready for sharing and future opportunities.</p></article>
+
+        <article>
+
+          <div class="icon">✦</div>
+
+          <h3>
+            Project Ideas & Planning
+          </h3>
+
+          <p>
+            Turn rough ideas into clearer problems,
+            scope, milestones, and plans.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <div class="icon">AI</div>
+
+          <h3>
+            AI Project Assistant
+          </h3>
+
+          <p>
+            Get contextual help across the different
+            stages of a project.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <div class="icon">▤</div>
+
+          <h3>
+            Documentation
+          </h3>
+
+          <p>
+            Organize project information and make
+            report preparation easier.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <div class="icon">◫</div>
+
+          <h3>
+            Presentation Support
+          </h3>
+
+          <p>
+            Prepare a clearer story for demos,
+            reviews, and presentations.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <div class="icon">?</div>
+
+          <h3>
+            Viva Preparation
+          </h3>
+
+          <p>
+            Practice explaining your project and
+            prepare for likely questions.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <div class="icon">⌘</div>
+
+          <h3>
+            GitHub & Portfolio
+          </h3>
+
+          <p>
+            Keep project outputs ready for sharing
+            and future opportunities.
+          </p>
+
+        </article>
+
       </div>
+
     </section>
 
+
+    <!-- STATEMENT -->
     <section class="section statement">
-      <div class="quote-mark">“</div>
-      <blockquote>We're not building another tool students have to remember.<br><span>We're building a better project journey.</span></blockquote>
+
+      <div class="quote-mark">
+        “
+      </div>
+
+      <blockquote>
+
+        We're not building another tool students
+        have to remember.
+
+        <br>
+
+        <span>
+          We're building a better project journey.
+        </span>
+
+      </blockquote>
+
     </section>
 
+
+    <!-- FOUNDERS -->
     <section id="founders" class="section founders">
-      <div class="eyebrow">THE FOUNDING TEAM</div>
-      <h2>Built with students,<br>for students.</h2>
-      <div class="founder-grid">
-        <div class="founder"><div class="avatar">SS</div><div><h3>Sunil Santhosh S</h3><p>Co-Founder</p></div></div>
-        <div class="founder"><div class="avatar">Y</div><div><h3>Yogeshwaren</h3><p>Co-Founder</p></div></div>
+
+      <div class="eyebrow">
+        THE FOUNDING TEAM
       </div>
+
+      <h2>
+        Built with students,
+        <br>
+        for students.
+      </h2>
+
+
+      <div class="founder-grid">
+
+
+        <!-- SUNIL -->
+
+        <div class="founder">
+
+          <div class="avatar">
+            SS
+          </div>
+
+          <div>
+
+            <h3>
+              Sunil Santhosh S
+            </h3>
+
+            <p>
+              Founder
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- YOGESHWARAN -->
+
+        <div class="founder">
+
+          <div class="avatar">
+            YS
+          </div>
+
+          <div>
+
+            <h3>
+              Yogeshwaren S
+            </h3>
+
+            <p>
+              Co-Founder
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
     </section>
 
+
+    <!-- EARLY ACCESS -->
     <section id="early-access" class="early">
-      <div class="eyebrow">EARLY ACCESS</div>
-      <h2>Help shape what we build next.</h2>
-      <p>We're talking to students, collecting feedback, and validating the biggest problems in college project workflows.</p>
-      <div class="actions center">
-        <a class="button primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfoucuXzE4pFN5OpZvHPbZ-017u6ZsesE6mg6PRRd-cMvFv8w/viewform" target="_blank" rel="noopener">Take the student survey ↗</a>
+
+      <div class="eyebrow">
+        EARLY ACCESS
       </div>
-      <small>Replace the survey link in <code>index.html</code> with your live Campus Pilot Google Form.</small>
+
+      <h2>
+        Help shape what we build next.
+      </h2>
+
+      <p>
+        We're talking to students, collecting feedback,
+        and validating the biggest problems in college
+        project workflows.
+      </p>
+
+
+      <div class="actions center">
+
+        <a
+          class="button primary"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfoucuXzE4pFN5OpZvHPbZ-017u6ZsesE6mg6PRRd-cMvFv8w/viewform"
+          target="_blank"
+          rel="noopener"
+        >
+          Take the Student Survey ↗
+        </a>
+
+      </div>
+
     </section>
+
   </main>
 
+
+  <!-- FOOTER -->
+
   <footer>
-    <div class="brand"><span class="brand-mark">CP</span><span>Campus Pilot</span></div>
-    <span>© 2026 Campus Pilot · Built for the student project journey.</span>
+
+    <div class="brand">
+
+      <span class="brand-mark">
+        CP
+      </span>
+
+      <span>
+        Campus Pilot
+      </span>
+
+    </div>
+
+    <span>
+      © 2026 Campus Pilot · Built for the student project journey.
+    </span>
+
   </footer>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
+```
