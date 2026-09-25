@@ -419,7 +419,7 @@ body {
 
 .founder-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 14px;
   margin-top: 40px;
 }
@@ -432,11 +432,21 @@ body {
   border: 1px solid #1b2839;
   border-radius: 17px;
   padding: 20px;
+  min-height: 95px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.founder:hover {
+  transform: translateY(-3px);
+  border-color: #29445e;
 }
 
 .avatar {
   width: 52px;
   height: 52px;
+  min-width: 52px;
   border-radius: 15px;
   display: grid;
   place-items: center;
@@ -567,6 +577,7 @@ footer .brand {
     margin-top: 20px;
   }
 
+  /* Founders stack on smaller screens */
   .founder-grid {
     grid-template-columns: 1fr;
   }
@@ -629,4 +640,5 @@ footer .brand {
   .line {
     margin: 0 4px;
   }
+
 }
